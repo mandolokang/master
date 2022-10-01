@@ -8,14 +8,10 @@ module.exports = function (app) {
 
   RouterUser.get('/book-list', bookListHandler)
 
-  //RouterUser.use(unknownEndpoint)
   app.use(`/v1/customer${groupPath}`, RouterUser)
 
   const RouterAdmin = express.Router()
   RouterAdmin.use(express.json())
 
-  //RouterAdmin.post('/login', login)
-
-  //RouterAdmin.use(unknownEndpoint)
   app.use(`/v1/admin${groupPath}`, RouterAdmin)
 }

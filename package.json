@@ -4,7 +4,8 @@
   "description": "Test JoyBox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=dev nodemon index.js",
+    "test": "NODE_ENV=test jest --verbose --runInBand --forceExit --no-cache"
   },
   "author": "Eko Grand Pandara",
   "license": "ISC",
@@ -16,7 +17,8 @@
     "joi": "^17.6.2",
     "morgan": "^1.10.0",
     "request-ip": "^3.3.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

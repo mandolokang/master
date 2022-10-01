@@ -4,7 +4,7 @@ const requestIp = require('request-ip')
 const configs = require('../../configs')
 const routes = require('./routes')
 //const middlewareDb = require('./middlewares/database')
-//const { logger } = require('../../services')
+const { logger } = require('../../services')
 
 module.exports = function (app) {
   if (configs.isDev) {
