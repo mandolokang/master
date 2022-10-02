@@ -1,4 +1,3 @@
-const { v4: uuid } = require('uuid')
 const { databaseError } = require('../../../utils/customError')
 var userList = []
 module.exports = async function (ctx, data) {
